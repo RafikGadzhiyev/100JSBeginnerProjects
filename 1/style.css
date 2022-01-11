@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html{
+    width: 100px;
+    min-height: 100vh;
+}
+
+.change_background-color-button{
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 2.5px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid black;
+    position:absolute;
+    top: 50%;
+    font-size: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.29);
+    color: white;
+}
