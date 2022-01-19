@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 10px;
+  background-color: #60cac1;
+  overflow: hidden;
+  color: white;
+}
+
+.counter_add-one_button,
+.counter_lower-one_button {
+  cursor: pointer;
+  color: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  border: 1.3px solid black;
+  border-radius: 2.5px;
+  outline: none;
+  -webkit-transition: 250ms ease;
+  transition: 250ms ease;
+  padding: 10px 20px;
+}
+
+.counter-container {
+  width: 550px;
+  height: 750px;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 0 auto;
+}
+
+.counter-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px 0;
+}
+
+.counter_add-one_button,
+.counter_lower-one_button {
+  text-transform: uppercase;
+  border-color: #fff;
+  font-size: 1.8rem;
+  -webkit-box-shadow: 0 0 15px -2px;
+          box-shadow: 0 0 15px -2px;
+}
+
+.counter_add-one_button:hover,
+.counter_lower-one_button:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0 5px 15px -2px;
+          box-shadow: 0 5px 15px -2px;
+}
+
+.counter_add-one_button:active,
+.counter_lower-one_button:active {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.counter-heading {
+  font-size: 80px;
+  text-transform: uppercase;
+}
+
+.counter_total-text {
+  font-size: 10rem;
+}
+
+.zero {
+  color: #787878;
+}
+
+.positive_integer {
+  color: #2fff6d;
+}
+
+.negative_integer {
+  color: #eb3030;
+}
+/*# sourceMappingURL=style.css.map */
