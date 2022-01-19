@@ -1,0 +1,104 @@
+$sliderContainerWidth: 700px;
+$sliderContainerHeight: 400px;
+$sliderContainerBorderColor: rgb(62, 124, 206);
+
+* {
+    margin: 0;
+    padding: 0;
+    // box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+%reset_button-default-styles {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: inherit;
+    color: inherit;
+}
+
+.slider {
+    width: $sliderContainerWidth;
+    height: $sliderContainerHeight;
+    margin: 100px auto;
+    position: relative;
+}
+
+.slider_container {
+    width: $sliderContainerWidth;
+    height: $sliderContainerHeight;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 5px solid $sliderContainerBorderColor;
+}
+
+
+
+.slides_container {
+    width: $sliderContainerWidth * 4;
+    height: $sliderContainerHeight;
+    transition: 600ms cubic-bezier(0.47, 0, 0.745, 0.715)
+}
+
+.slide {
+    width: $sliderContainerWidth;
+    height: $sliderContainerHeight;
+    float: left;
+
+    &.slider_1 {
+        background-color: red;
+    }
+
+    &.slider_2 {
+        background-color: blue;
+    }
+
+    &.slider_3 {
+        background-color: green;
+    }
+
+    &.slider_4 {
+        background-color: orange;
+    }
+
+}
+
+.slider_button {
+    $buttonHeight: 40px;
+    $buttonWidth: 60px;
+
+    @extend %reset_button-default-styles;
+
+    background-color: $sliderContainerBorderColor;
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    width: $buttonWidth;
+    height: $buttonHeight;
+    line-height: $buttonHeight;
+    transition: 250ms ease-in;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    &.prev_slide-button {
+        left: 0;
+    }
+
+    &.next_slide-button {
+        right: -$buttonWidth;
+    }
+
+    &:hover {
+        background-color: rgba($color: $sliderContainerBorderColor, $alpha: .7);
+    }
+
+}
